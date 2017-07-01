@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    background-color: #f8f8f8;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}

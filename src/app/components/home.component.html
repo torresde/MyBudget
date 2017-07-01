@@ -1,0 +1,43 @@
+<div *ngIf="allEntries" style="margin-top: 15px">
+    <div class="bar-line">
+        <div class="bar-title">Income:</div>
+        <div class="income-bar bar" [ngStyle]="{'width': incomeBar + 'px'}">
+            {{totalIncome | currency:'USD':true}}
+        </div>
+    </div>
+    <div class="bar-line">
+        <div class="bar-title">Expenses:</div>
+        <div class="expense-bar bar" [ngStyle]="{'width': expenseBar + 'px'}">
+            {{totalExpense | currency:'USD':true}}
+        </div>
+    </div>
+</div>
+
+
+<div class="entry-table-header">
+    <div class="entry-title">Recent Transactions</div>
+</div>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th style="text-align: right">Amount</th>
+        <th style="padding-left: 50px">Date</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let entry of entries">
+        <td class="name-cell">{{entry.name}}</td>
+        <td class="amount-cell">{{entry.amount | currency:'USD':true }}</td>
+        <td class="date-cell">
+            {{entry.month | number:'2.0-0'}}/{{entry.day | number:'2.0-0'}}/{{entry.year}}
+        </td>
+        <td
+            class="edit-button"
+            (click)="onEdit(entry)">
+            Edit
+        </td>
+    </tr>
+</table>
+<div class="add-entry" style="width: 150px" *ngIf="!showingAll"
+    (click)="showAll()">+ Show All Entries</div>
+<div class="add-entry" style="width: 160px" *ngIf="showingAll"
+    (click)="showLess()">— Show Less Entries</div>

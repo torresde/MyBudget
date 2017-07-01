@@ -1,0 +1,24 @@
+<div *ngIf="type">
+<h3> Add New {{type}} Entry </h3>
+    <div class="input-box">
+        <label>{{type}} name:</label>
+        <input #entryName placeholder="Source Name"/>
+    </div>
+    <div class="input-box">
+        <label>{{type}} amount:</label>
+        <input #entryAmount placeholder="USD"/></div>
+    <div class="input-box">
+        <label>{{type}} date:</label>
+        <div class="date-box">
+            <input #entryMonth style="width: 20px" placeholder="MM"/> /
+            <input #entryDay style="width: 20px" placeholder="DD"/> /
+            <input #entryYear style="width: 40px" placeholder="YYYY"/>
+        </div>
+    </div>
+    <button (click)="goBack()">Back</button>
+    <button (click)="submit(entryName.value,
+                    entryAmount.value,
+                    entryMonth.value,
+                    entryDay.value,
+                    entryYear.value)">Submit</button>
+</div>

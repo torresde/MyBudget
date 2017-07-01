@@ -1,0 +1,31 @@
+<div *ngIf="entry">
+<h3> Edit {{type}} Entry </h3>
+
+    <div class="input-box">
+        <label>Name:</label>
+        <input [(ngModel)]="entry.name" placeholder="Source Name">
+    </div>
+
+    <div class="input-box">
+        <label>Amount:</label>
+        <input [(ngModel)]="entry.amount" placeholder="USD">
+    </div>
+    
+    <div class="input-box">
+        <label>Date:</label>
+        <div class="date-box">
+            <input [(ngModel)]="entry.month" style="width: 20px" placeholder="MM"/> /
+            <input [(ngModel)]="entry.day" style="width: 20px" placeholder="DD"/> /
+            <input [(ngModel)]="entry.year" style="width: 40px" placeholder="YYYY"/>
+        </div>    
+    </div>
+
+    <div class="buttons">
+        <div>
+            <button (click)="goBack()">Back</button>
+            <button (click)="save()">Save</button>
+        </div>
+        <button (click)="delete()">Delete</button>
+    </div>
+    
+</div>

@@ -1,0 +1,8 @@
+.main-page {
+    display: table;
+    width: 800px;
+    height: 100%;
+    background-color: white;
+    padding: 0 20px;
+    margin: 0 20px;
+}

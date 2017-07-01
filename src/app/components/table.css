@@ -1,0 +1,68 @@
+.table {
+    border-collapse: collapse;
+    width: 800px;
+}
+
+td, th {
+    border-top: 1px solid #004c00;
+    border-bottom: 1px solid #004c00;
+    padding: 8px;
+    text-align: left;
+    font-family: arial;
+}
+
+.name-cell {
+    width: 300px;
+}
+
+.amount-cell {
+    width: 200px;
+    text-align: right;
+}
+
+.date-cell {
+    width: 150px;
+    padding-left: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.entry-table-header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    align-items: baseline;
+}
+
+.entry-title {
+    font-size: 30px;
+    font-family: verdana;
+    margin-bottom: 10px;
+}
+
+.add-entry {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 15px;
+    font-family: verdana;
+}
+
+.add-entry:hover {
+    background-color: #f4f4f4;
+}
+
+.add-entry:active {
+    background-color: #e6e6e6;
+}
+
+.edit-button {
+    width: 35px;
+}
+
+.edit-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

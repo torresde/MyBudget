@@ -1,0 +1,52 @@
+.header-main {
+    width: screen;
+    height: 100px;
+    background-color: white;
+    font-family: verdana;
+}
+
+.header-tab-bar {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #004c00;
+    border-bottom: 1px solid #004c00;
+    background-color: #eaeaea;
+    width: 800px;
+    height: 34px;
+}
+
+.header-tab {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 15px;
+    width: 120px;
+    text-align: center;
+    font-family: verdana;
+}
+
+.header-tab:hover {
+    background-color: #bbbbbb;
+}
+
+.header-tab:active {
+    background-color: #a3a3a3;
+}
+
+.title {
+    color: #004c00;
+    margin-top: 30px;
+    font-size: 50px;
+    float: left;
+}
+
+.subtitle {
+    float: left;
+    margin-top: 59px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.search-bar {
+    margin-top: 4px;
+    margin-right: 4px;
+}

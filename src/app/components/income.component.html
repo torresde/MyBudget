@@ -1,0 +1,29 @@
+<div class="entry-table-header">
+    <div class="entry-title">My Income</div>
+    <div class="add-entry" (click)="addIncome()">+ Add Income</div>
+</div>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th style="text-align: right">Amount</th>
+        <th style="padding-left: 50px">Date</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let entry of income">
+        <td class="name-cell">{{entry.name}}</td>
+        <td class="amount-cell">{{entry.amount | currency:'USD':true }}</td>
+        <td class="date-cell">
+            {{entry.month | number:'2.0-0'}}/{{entry.day | number:'2.0-0'}}/{{entry.year}}
+        </td>
+        <td
+            class="edit-button"
+            (click)="onEdit(entry)"
+            >Edit</td>
+    </tr>
+    <tr *ngIf="incomeTotal" style="border-top: 2px solid #004c00;border-bottom: 2px solid #004c00">
+        <td class="name-cell">Total</td>
+        <td class="amount-cell">{{incomeTotal | currency:'USD':true }}</td>
+        <td class="date-cell"></td>
+        <td class="edit-button"></td>
+    </tr>
+</table>

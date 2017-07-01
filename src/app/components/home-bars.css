@@ -1,0 +1,31 @@
+.income-bar {
+    border: 1px solid #009900;
+    background-color: #b2ffb2;
+    height: 20px;
+    color: #007f00;
+}
+
+.bar {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expense-bar {
+    border: 1px solid #FF0000;
+    background-color: #ffb2b2;
+    height: 20px;
+    color: #990000;
+}
+
+.bar-line {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bar-title {
+    width: 85px;
+    font-size: 15px;
+    font-family: verdana;
+}

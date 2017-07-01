@@ -1,0 +1,19 @@
+.input-box {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.date-box {
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+}

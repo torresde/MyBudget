@@ -1,0 +1,23 @@
+.search-result {
+  border-bottom: 1px solid #004c00;
+  border-left: 1px solid #004c00;
+  border-right: 1px solid #004c00;
+  width:195px;
+  height: 16px;
+  padding: 4px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.search-result:hover {
+  color: #eee;
+  background-color: #bbbbbb;
+}
+ 
+.searchBox {
+  width: 200px;
+  height: 20px;
+  font-family: Verdana;
+}

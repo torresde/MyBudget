@@ -1,0 +1,22 @@
+<div class="header-main">
+    <div class="title">
+        {{ title }}
+    </div>
+    <div class="subtitle">
+        Manage your money.
+    </div>
+</div>
+<div class="header-tab-bar">
+    <div style="display:flex; justify-content: flex-start">
+        <div
+            *ngFor="let tab of tabs"
+            class="header-tab"
+            routerLink="{{tab.link}}">
+                {{tab.name}}
+        </div>
+    </div>
+    <div class="search-bar">
+        <entry-search></entry-search>
+    </div>
+    
+</div>
